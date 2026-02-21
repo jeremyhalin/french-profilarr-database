@@ -1,17 +1,16 @@
-name: FR - 2160p SDR VO-VF Efficient
-description: "2160p SDR Efficient targeting MULTi releases (VO+VF) with VO fallback.\
+name: FR - 2160p VO-VF Efficient
+description: "2160p Efficient targeting MULTi releases (VO+VF) with VO fallback.\
   \ Based on 2160p Efficient.\n\n- MULTi releases are strongly preferred (VO+VF)\n\
   - Non-MULTi releases are accepted as fallback, allowing automatic upgrade to MULTi\n\
-  - VF-only and VFQ releases are hard-blocked\n- All HDR formats are blocked (SDR\
-  \ only)\n- Average Movie Sizes ~ 15 to 30gb per Movie\n- Movie Quality Ranking ~\
-  \ 6/10"
+  - VF-only and VFQ releases are hard-blocked\n- SDR preferred, HDR accepted but\
+  \ deprioritized (DV without fallback still blocked)\n- Average Movie Sizes ~ 15\
+  \ to 30gb per Movie\n- Movie Quality Ranking ~ 6/10"
 tags:
 - 2160p
 - Efficient Focused
 - Lossy Audio
 - h265
 - x265
-- SDR
 - French
 upgradesAllowed: true
 minCustomFormatScore: 20000
@@ -161,7 +160,7 @@ custom_formats:
 - name: Banned WEBRip (Efficient)
   score: -999999
 - name: Dolby Vision
-  score: -999999
+  score: -500
 - name: Dolby Vision (Without Fallback)
   score: -999999
 - name: DS4K
@@ -175,17 +174,17 @@ custom_formats:
 - name: h265 (Efficient)
   score: -999999
 - name: HDR
-  score: -999999
+  score: -500
 - name: HDR10
-  score: -999999
+  score: -500
 - name: HDR10+
-  score: -999999
+  score: -500
 - name: HLG
-  score: -999999
+  score: -500
 - name: Lossless Audio
   score: -999999
 - name: PQ
-  score: -999999
+  score: -500
 - name: Remux
   score: -999999
 - name: VP9
@@ -273,6 +272,31 @@ custom_formats_radarr:
   score: -999999
 - name: Upscale
   score: -999999
+custom_formats_sonarr:
+- name: 2160p Efficient TV Bluray Tier 1
+  score: 421000
+- name: QxR Blurays
+  score: 421000
+- name: TAoE Blurays
+  score: 421000
+- name: 2160p Efficient TV WEB Tier 1
+  score: 400000
+- name: QxR WEBs
+  score: 400000
+- name: TAoE WEBs
+  score: 400000
+- name: 2160p Balanced Tier 1
+  score: 384000
+- name: DSNP
+  score: 3000
+- name: HMAX
+  score: 3000
+- name: MAX
+  score: 3000
+- name: iT
+  score: 1000
+- name: HBO Max Enhancement
+  score: -1000
 qualities:
 - id: -4
   name: 2160p Efficient
