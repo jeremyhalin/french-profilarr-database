@@ -1,7 +1,7 @@
 name: FR - VF
-pattern: (?i)\b(VFF|VFI|VF2|TRUEFRENCH|FRENCH|VF)\b
+pattern: (?i)\b(VFF|VFI|VF2|TRUEFRENCH|VF)\b
 description: Matches French version markers in release titles (VFF, VFI, VF2, TRUEFRENCH,
-  FRENCH, VF)
+  VF)
 tags:
 - Language
 - French
@@ -11,7 +11,7 @@ tests:
   expected: true
 - id: 2
   input: Movie.2024.FRENCH.1080p.BluRay.x265-GROUP
-  expected: true
+  expected: false
 - id: 3
   input: Movie.2024.TRUEFRENCH.1080p.WEB-DL.x265-GROUP
   expected: true
@@ -32,4 +32,10 @@ tests:
   expected: false
 - id: 9
   input: Movie.2024.MULTi.1080p.WEB-DL.x265-GROUP
+  expected: false
+- id: 10
+  input: The.French.Connection.1971.1080p.BluRay.x264-GROUP
+  expected: false
+- id: 11
+  input: French.Exit.2020.1080p.WEB-DL.x264-GROUP
   expected: false
