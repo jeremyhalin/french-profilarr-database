@@ -1,6 +1,5 @@
-name: FR - 1080p VO-VF Efficient
-description: '1080p Efficient targeting MULTi releases only (VO+VF). Based on 1080p
-  Efficient.
+name: FR - 1080p MULTi Efficient
+description: '1080p Efficient targeting MULTi releases only. Based on 1080p Efficient.
 
 
   - Only MULTi releases are accepted (no fallback to VO-only)
