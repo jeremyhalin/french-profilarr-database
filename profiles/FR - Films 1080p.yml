@@ -1,34 +1,28 @@
-name: FR - 1080p VO Efficient
-description: '1080p Efficient targeting VO (original version) releases only. Based
-  on 1080p Efficient.
-
-
-  - VF-only releases are hard-blocked
-
-  - MULTi and VO releases are accepted
-
-  - Average TV Sizes ~ 2 to 3gb per Episode'
+name: FR - Films 1080p
+description: "1080p Quality targeting MULTi releases (VO+VF) with VO fallback. Based on\
+  \ 1080p Quality.\n\n- MULTi releases are strongly preferred (VO+VF)\n- Non-MULTi releases\
+  \ are accepted as fallback, allowing automatic upgrade to MULTi\n- VF-only and VFQ releases\
+  \ are hard-blocked\n- Average Movie Sizes ~ 10 to 15gb per Movie\n- Movie Quality Ranking\
+  \ ~ 8/10"
 tags:
 - 1080p
-- Efficient Focused
+- Quality Focused
 - Lossy Audio
-- h265
+- x264
+- h264
 - x265
+- h265
 - French
 upgradesAllowed: true
 minCustomFormatScore: 20000
 upgradeUntilScore: 888888
 minScoreIncrement: 1
 custom_formats:
-- name: 1080p Bluray HEVC Tier 1
-  score: 360000
-- name: HONE Bluray
-  score: 360000
-- name: 1080p WEB-DL HEVC Tier 1
-  score: 340000
-- name: HONE WEB
-  score: 340000
-- name: 1080p WEB-DL (h264)
+- name: 1080p WEB-DL
+  score: 380000
+- name: 1080p Bluray
+  score: 280000
+- name: 1080p WEBRip
   score: 280000
 - name: 720p WEB-DL
   score: 240000
@@ -36,6 +30,22 @@ custom_formats:
   score: 180000
 - name: 720p WEBRip
   score: 180000
+- name: 1080p Bluray HEVC Tier 1
+  score: 150000
+- name: 1080p WEB-DL HEVC Tier 1
+  score: 150000
+- name: 1080p Quality Tier 1
+  score: 125000
+- name: 1080p Quality Tier 2
+  score: 124000
+- name: 1080p Quality Tier 3
+  score: 123000
+- name: 1080p Quality Tier 4
+  score: 122000
+- name: 1080p Quality Tier 5
+  score: 121000
+- name: 1080p Quality Tier 6
+  score: 120000
 - name: 576p Bluray
   score: 120000
 - name: 720p Quality Tier 1
@@ -78,33 +88,21 @@ custom_formats:
   score: 11000
 - name: SD Quality Tier 2
   score: 10000
+- name: FR - Multi
+  score: 5000
 - name: AMZN
-  score: 3000
-- name: Dolby Vision
   score: 3000
 - name: DSNP
   score: 3000
 - name: ATVP
   score: 2000
-- name: HDR10+
-  score: 2000
 - name: HMAX
   score: 2000
 - name: MAX
   score: 2000
-- name: DS4K
-  score: 1000
-- name: HDR
-  score: 1000
-- name: HDR10
-  score: 1000
-- name: HLG
-  score: 1000
 - name: iT
   score: 1000
 - name: NF
-  score: 1000
-- name: PQ
   score: 1000
 - name: FLAC
   score: 800
@@ -172,67 +170,51 @@ custom_formats:
   score: -999999
 - name: AV1
   score: -999999
-- name: Banned Groups (Efficient)
+- name: Banned Groups
   score: -999999
-- name: Banned WEBRip (Efficient)
+- name: Banned WEBRip
   score: -999999
 - name: BCORE
-  score: -999999
-- name: Dolby Vision (Without Fallback)
-  score: -999999
+  score: 0
+- name: Dolby Vision
+  score: 0
 - name: FR - VF Only
   score: -999999
 - name: FR - VFQ
   score: -999999
+- name: DS4K
+  score: 1000
 - name: Full Disc
   score: -999999
-- name: h265 (Efficient)
-  score: -999999
+- name: h265
+  score: 0
+- name: HDR
+  score: 0
+- name: HDR10
+  score: 0
+- name: HDR10+
+  score: 0
+- name: HLG
+  score: 0
 - name: Lossless Audio
   score: -999999
+- name: PQ
+  score: 0
 - name: Remux
   score: -999999
 - name: VP9
   score: -999999
 - name: VVC
   score: -999999
-- name: x265 (Efficient)
-  score: -999999
+- name: x265
+  score: 0
 - name: Xvid
   score: -999999
 custom_formats_radarr:
-- name: 1080p Efficient Movie Bluray Tier 1
-  score: 323000
-- name: QxR Bluray
-  score: 323000
-- name: TAoE Bluray
-  score: 323000
-- name: 1080p Efficient Movie Bluray Tier 2
-  score: 322000
-- name: Vialle Bluray
-  score: 322000
-- name: 1080p Efficient Movie Bluray Tier 3
-  score: 321000
-- name: 1080p Efficient Movie Bluray Tier 4
-  score: 320000
-- name: 1080p Efficient Movie WEB Tier 1
-  score: 303000
-- name: QxR WEB
-  score: 303000
-- name: TAoE WEB
-  score: 303000
-- name: Weasley WEB
-  score: 303000
-- name: 1080p Efficient Movie WEB Tier 2
-  score: 302000
-- name: 1080p Efficient Movie WEB Tier 3
-  score: 301000
-- name: 1080p Efficient Movie WEB Tier 4
-  score: 300000
 - name: 1080p Balanced Tier 1
-  score: 281000
+  score: 101000
 - name: 1080p Balanced Tier 2
-  score: 280000
+  score: 100000
 - name: 720p Balanced Tier 1
   score: 60000
 - name: MA
@@ -256,42 +238,6 @@ custom_formats_radarr:
 - name: Upscale
   score: -999999
 custom_formats_sonarr:
-- name: 1080p Efficient TV Bluray Tier 1
-  score: 324000
-- name: QxR Bluray
-  score: 324000
-- name: TAoE Bluray
-  score: 324000
-- name: Vialle Bluray
-  score: 324000
-- name: 1080p Efficient TV Bluray Tier 2
-  score: 323000
-- name: 1080p Efficient TV Bluray Tier 3
-  score: 322000
-- name: 1080p Efficient TV Bluray Tier 4
-  score: 321000
-- name: 1080p Efficient TV Bluray Tier 5
-  score: 320000
-- name: 1080p Efficient TV WEB Tier 1
-  score: 305000
-- name: QxR WEB
-  score: 305000
-- name: TAoE WEB
-  score: 305000
-- name: Vialle WEB
-  score: 305000
-- name: Weasley WEB
-  score: 305000
-- name: 1080p Efficient TV WEB Tier 2
-  score: 304000
-- name: 1080p Efficient TV WEB Tier 3
-  score: 303000
-- name: 1080p Efficient TV WEB Tier 4
-  score: 302000
-- name: 1080p Efficient TV Bluray Tier 6
-  score: 301000
-- name: 1080p Efficient TV WEB Tier 5
-  score: 300000
 - name: Season Pack
   score: 10
 - name: Remux (Source)
@@ -302,10 +248,9 @@ custom_formats_sonarr:
   score: -999999
 qualities:
 - id: -1
-  name: 1080p Efficient
-  description: Balanced Capable releases. Typically WEB-DL would be the overwhelming
-    majority of releases, but there are occasional streaming optimised encodes that
-    should be preferred.
+  name: 1080p Quality
+  description: All capable of being indistinguishable from source. WEB-DL included
+    to not allow unknown encode to trump known WEB-DL.
   qualities:
   - id: 10
     name: Bluray-1080p
@@ -337,8 +282,7 @@ qualities:
     name: DVD
 upgrade_until:
   id: -1
-  name: 1080p Efficient
-  description: Balanced Capable releases. Typically WEB-DL would be the overwhelming
-    majority of releases, but there are occasional streaming optimised encodes that
-    should be preferred.
-language: must_original
+  name: 1080p Quality
+  description: All capable of being indistinguishable from source. WEB-DL included
+    to not allow unknown encode to trump known WEB-DL.
+language: any
