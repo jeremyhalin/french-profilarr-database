@@ -27,6 +27,8 @@ custom_formats:
   score: 340000
 - name: HONE WEB
   score: 340000
+- name: 1080p WEB (x265)
+  score: 290000
 - name: 1080p WEB-DL (h264)
   score: 280000
 - name: 720p WEB-DL
