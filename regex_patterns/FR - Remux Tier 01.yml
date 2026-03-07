@@ -1,0 +1,7 @@
+name: FR - Remux Tier 01
+pattern: (?<=^|[\s.-])(BlackAngel|Choco|FtLi|Goldenyann|HDForever|HeavyWeight|MAX|ONLY|Psaro|Sicario|Tezcat74|TyrellCorp|Zapax)\b
+description: French P2P Remux Tier 01 release groups (best quality)
+tags:
+- Release Group
+- French
+tests: []

@@ -1,0 +1,7 @@
+name: FR - UHD Bluray Tier 01
+pattern: (?<=^|[\s.-])(FLOP|FoX|FRATERNiTY|Psaro)\b
+description: French P2P UHD Bluray Tier 01 release groups (best quality)
+tags:
+- Release Group
+- French
+tests: []

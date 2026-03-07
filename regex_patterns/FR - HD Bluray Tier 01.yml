@@ -1,0 +1,7 @@
+name: FR - HD Bluray Tier 01
+pattern: (?<=^|[\s.-])(ARK01|BDHD|BONBON|FoX|FRATERNiTY|FrIeNdS|FTMVHD|HeavyWeight|MAX|Psaro|YODA)\b
+description: French P2P HD Bluray Tier 01 release groups (best quality)
+tags:
+- Release Group
+- French
+tests: []

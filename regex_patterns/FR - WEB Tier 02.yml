@@ -1,0 +1,7 @@
+name: FR - WEB Tier 02
+pattern: (?<=^|[\s.-])(ALLDAYiN|ARK01|COLL3CTiF|FiND|HeavyWeight|NEO|NoNe|ONLYMOViE|pERsO|POTO|RiPiT|Slay3R|TAT|TkHD|WaCkS)\b
+description: French P2P WEB Tier 02 release groups
+tags:
+- Release Group
+- French
+tests: []

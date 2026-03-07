@@ -1,0 +1,27 @@
+name: FR - HD Bluray Tier 02
+description: French P2P HD Bluray Tier 02 release groups
+tags:
+- Release Group Tier
+- French
+conditions:
+- name: Bluray
+  negate: false
+  required: true
+  source: bluray
+  type: source
+- name: Not Remux
+  negate: true
+  required: true
+  source: remux
+  type: source
+- name: Not 2160p
+  negate: true
+  required: true
+  resolution: 2160p
+  type: resolution
+- name: FR HD Bluray Tier 02 Groups
+  negate: false
+  pattern: FR - HD Bluray Tier 02
+  required: false
+  type: release_group
+tests: []

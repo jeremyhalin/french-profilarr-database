@@ -1,0 +1,32 @@
+name: FR - UHD Bluray Tier 01
+description: French P2P UHD Bluray Tier 01 release groups (best quality)
+tags:
+- Release Group Tier
+- French
+conditions:
+- name: 2160p
+  negate: false
+  required: true
+  resolution: 2160p
+  type: resolution
+- name: Not Remux
+  negate: true
+  required: true
+  source: remux
+  type: source
+- name: Not WEB-DL
+  negate: true
+  required: true
+  source: web_dl
+  type: source
+- name: Not WEBRip
+  negate: true
+  required: true
+  source: webrip
+  type: source
+- name: FR UHD Bluray Tier 01 Groups
+  negate: false
+  pattern: FR - UHD Bluray Tier 01
+  required: false
+  type: release_group
+tests: []

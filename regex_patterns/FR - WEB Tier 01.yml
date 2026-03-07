@@ -1,0 +1,7 @@
+name: FR - WEB Tier 01
+pattern: (?<=^|[\s.-])(BONBON|FCK|FoX|FRATERNiTY|FrIeNdS|FW|MOONLY|MTDK|NoLo|PATOPESTO|Psaro|RG|SUPPLY|TFA|TiNA)\b
+description: French P2P WEB Tier 01 release groups (best quality)
+tags:
+- Release Group
+- French
+tests: []

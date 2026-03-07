@@ -1,0 +1,17 @@
+name: FR - Remux Tier 01
+description: French P2P Remux Tier 01 release groups (best quality)
+tags:
+- Release Group Tier
+- French
+conditions:
+- name: Remux
+  negate: false
+  required: true
+  source: remux
+  type: source
+- name: FR Remux Tier 01 Groups
+  negate: false
+  pattern: FR - Remux Tier 01
+  required: false
+  type: release_group
+tests: []

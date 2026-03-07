@@ -1,0 +1,8 @@
+name: FR - LQ Ads
+pattern: (?<=^|[\s.-])(Bandix|CZ\d+|EXTREME|GAIA|GAiA|HMiDiMADRiDi|Hush|KILLERMIX|LiBERTAD|LTTM|LTaTM|MONiCO|NEWCINE|RPZ|RZP|ShowFR|VERCLAM|ViKi47|Wawacity|Wawamania|Wawaporno|Wawa|ZW)\b
+description: French low quality groups - Ads and Watermarks
+tags:
+- Release Group
+- French
+- LQ
+tests: []
