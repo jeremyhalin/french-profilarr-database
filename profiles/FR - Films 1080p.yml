@@ -1,95 +1,48 @@
 name: FR - Films 1080p
-description: "1080p Quality targeting MULTi releases (VO+VF) with VO fallback. Based on\
-  \ 1080p Quality.\n\n- MULTi releases are strongly preferred (VO+VF)\n- Non-MULTi releases\
-  \ are accepted as fallback, allowing automatic upgrade to MULTi\n- VF-only and VFQ releases\
-  \ are hard-blocked\n- Average Movie Sizes ~ 10 to 15gb per Movie\n- Movie Quality Ranking\
-  \ ~ 8/10"
+description: "Profil 1080p MULTi pour films.\n\n- MULTi (VO+VF) fortement privilégié\n\
+  - Non-MULTi accepté en fallback, upgrade automatique vers MULTi\n- VF-only et VFQ\
+  \ bloqués\n- x264 légèrement préféré, x265 accepté\n- Remux et Lossless Audio bloqués\
+  \ pour contrôler la taille"
 tags:
 - 1080p
-- Quality Focused
-- Lossy Audio
-- x264
-- h264
-- x265
-- h265
 - French
 upgradesAllowed: true
 minCustomFormatScore: 20000
 upgradeUntilScore: 888888
 minScoreIncrement: 1
 custom_formats:
-- name: 1080p WEB-DL
-  score: 380000
+# === Source + Résolution ===
 - name: 1080p Bluray
-  score: 280000
+  score: 300000
+- name: 1080p WEB-DL
+  score: 300000
 - name: 1080p WEBRip
   score: 280000
 - name: 720p WEB-DL
-  score: 240000
+  score: 200000
 - name: 720p Bluray
-  score: 180000
+  score: 200000
 - name: 720p WEBRip
   score: 180000
-- name: 1080p Bluray HEVC Tier 1
-  score: 150000
-- name: 1080p WEB-DL HEVC Tier 1
-  score: 150000
-- name: 1080p Quality Tier 1
-  score: 125000
-- name: 1080p Quality Tier 2
-  score: 124000
-- name: 1080p Quality Tier 3
-  score: 123000
-- name: 1080p Quality Tier 4
-  score: 122000
-- name: 1080p Quality Tier 5
-  score: 121000
-- name: 1080p Quality Tier 6
-  score: 120000
 - name: 576p Bluray
-  score: 120000
-- name: 720p Quality Tier 1
-  score: 85000
-- name: 720p Quality Tier 2
-  score: 84000
-- name: 720p Quality Tier 3
-  score: 83000
-- name: 720p Quality Tier 4
-  score: 82000
-- name: 720p Quality Tier 5
-  score: 81000
+  score: 100000
 - name: 480p Bluray
-  score: 80000
-- name: 720p Quality Tier 6
-  score: 80000
+  score: 100000
 - name: 480p WEB-DL
-  score: 60000
-- name: 576p Quality Tier 1
-  score: 43000
-- name: 576p Quality Tier 2
-  score: 42000
-- name: 576p Quality Tier 3
-  score: 41000
-- name: 576p Quality Tier 4
-  score: 40000
-- name: 480p Quality Tier 1
-  score: 23000
-- name: 480p Quality Tier 2
-  score: 22000
-- name: 480p Quality Tier 3
-  score: 21000
-- name: 480p Quality Tier 4
-  score: 20000
+  score: 100000
 - name: DVD
-  score: 20000
+  score: 100000
 - name: DVD Remux
-  score: 20000
-- name: SD Quality Tier 1
-  score: 11000
-- name: SD Quality Tier 2
-  score: 10000
+  score: 100000
+# === Langue ===
 - name: FR - Multi
-  score: 5000
+  score: 50000
+# === Codec ===
+- name: x265
+  score: -2000
+- name: h265
+  score: -2000
+# === Groupes FR ===
 - name: FR - HD Bluray Tier 01
   score: 1800
 - name: FR - HD Bluray Tier 02
@@ -102,6 +55,7 @@ custom_formats:
   score: 1600
 - name: FR - Scene Groups
   score: 1500
+# === Streaming ===
 - name: AMZN
   score: 3000
 - name: DSNP
@@ -116,6 +70,7 @@ custom_formats:
   score: 1000
 - name: NF
   score: 1000
+# === Audio ===
 - name: FLAC
   score: 800
 - name: DTS-HD HRA
@@ -134,6 +89,7 @@ custom_formats:
   score: 300
 - name: AAC
   score: 200
+# === WEB-DL Tiers ===
 - name: WEB-DL Tier 1
   score: 100
 - name: WEB-DL Tier 2
@@ -144,63 +100,17 @@ custom_formats:
   score: 40
 - name: WEB-DL Tier 5
   score: 20
+# === Repacks ===
 - name: Repack3
   score: 8
 - name: Repack2
   score: 7
 - name: Repack1
   score: 6
-- name: CRAV
-  score: 0
-- name: CRIT
-  score: 0
-- name: DRPO
-  score: 0
-- name: HTSR
-  score: 0
-- name: HULU
-  score: 0
-- name: iP
-  score: 0
-- name: MUBI
-  score: 0
-- name: NOW
-  score: 0
-- name: PCOK
-  score: 0
-- name: PLAY
-  score: 0
-- name: PMTP
-  score: 0
-- name: ROKU
-  score: 0
-- name: SHO
-  score: 0
-- name: STAN
-  score: 0
-- name: ASL
-  score: -999999
-- name: AV1
-  score: -999999
-- name: Banned Groups
-  score: -999999
-- name: Banned WEBRip
-  score: -999999
-- name: BCORE
-  score: 0
-- name: Dolby Vision
-  score: 0
-- name: FR - LQ
-  score: -999999
-- name: FR - VF Only
-  score: -999999
-- name: FR - VFQ
-  score: -999999
+# === Divers ===
 - name: DS4K
   score: 1000
-- name: Full Disc
-  score: -999999
-- name: h265
+- name: Dolby Vision
   score: 0
 - name: HDR
   score: 0
@@ -210,27 +120,36 @@ custom_formats:
   score: 0
 - name: HLG
   score: 0
-- name: Lossless Audio
-  score: -999999
 - name: PQ
   score: 0
+# === Blockers ===
+- name: ASL
+  score: -999999
+- name: AV1
+  score: -999999
+- name: Banned Groups
+  score: -999999
+- name: Banned WEBRip
+  score: -999999
+- name: FR - LQ
+  score: -999999
+- name: FR - VF Only
+  score: -999999
+- name: FR - VFQ
+  score: -999999
+- name: Full Disc
+  score: -999999
+- name: Lossless Audio
+  score: -999999
 - name: Remux
   score: -999999
 - name: VP9
   score: -999999
 - name: VVC
   score: -999999
-- name: x265
-  score: 0
 - name: Xvid
   score: -999999
 custom_formats_radarr:
-- name: 1080p Balanced Tier 1
-  score: 101000
-- name: 1080p Balanced Tier 2
-  score: 100000
-- name: 720p Balanced Tier 1
-  score: 60000
 - name: MA
   score: 4000
 - name: Better Theatricals

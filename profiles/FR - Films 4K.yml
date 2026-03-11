@@ -1,90 +1,53 @@
 name: FR - Films 4K
-description: "2160p Efficient targeting MULTi releases (VO+VF) with VO fallback.\
-  \ Based on 2160p Efficient.\n\n- MULTi releases are strongly preferred (VO+VF)\n\
-  - Non-MULTi releases are accepted as fallback, allowing automatic upgrade to MULTi\n\
-  - VF-only and VFQ releases are hard-blocked\n- SDR preferred, HDR accepted but\
-  \ deprioritized (DV without fallback still blocked)\n- Average Movie Sizes ~ 15\
-  \ to 30gb per Movie\n- Movie Quality Ranking ~ 6/10"
+description: "Profil 2160p MULTi pour films.\n\n- MULTi (VO+VF) fortement privilégié\n\
+  - Non-MULTi accepté en fallback, upgrade automatique vers MULTi\n- VF-only et VFQ\
+  \ bloqués\n- x265 privilégié pour un bon ratio qualité/taille\n- x264 bloqué en\
+  \ 4K\n- Remux bloqué, Lossless Audio accepté"
 tags:
 - 2160p
-- Efficient Focused
-- Lossy Audio
-- h265
-- x265
 - French
 upgradesAllowed: true
 minCustomFormatScore: 20000
 upgradeUntilScore: 888888
 minScoreIncrement: 1
 custom_formats:
-- name: 2160p WEB-DL (Efficient)
-  score: 380000
-- name: 1080p Bluray HEVC Tier 1
-  score: 360000
-- name: HONE Bluray
-  score: 360000
-- name: 1080p WEB-DL HEVC Tier 1
-  score: 340000
-- name: HONE WEB
-  score: 340000
-- name: 1080p WEB-DL (h264)
-  score: 280000
+# === Source + Résolution ===
+- name: 2160p Bluray
+  score: 300000
+- name: 2160p WEB-DL
+  score: 300000
+- name: 1080p Bluray
+  score: 200000
+- name: 1080p WEB-DL
+  score: 200000
+- name: 1080p WEBRip
+  score: 180000
 - name: 720p WEB-DL
-  score: 240000
+  score: 150000
 - name: 720p Bluray
-  score: 180000
+  score: 150000
 - name: 720p WEBRip
-  score: 180000
+  score: 130000
 - name: 576p Bluray
-  score: 120000
-- name: 720p Quality Tier 1
-  score: 85000
-- name: 720p Quality Tier 2
-  score: 84000
-- name: 720p Quality Tier 3
-  score: 83000
-- name: 720p Quality Tier 4
-  score: 82000
-- name: 720p Quality Tier 5
-  score: 81000
+  score: 100000
 - name: 480p Bluray
-  score: 80000
-- name: 720p Quality Tier 6
-  score: 80000
+  score: 100000
 - name: 480p WEB-DL
-  score: 60000
-- name: 576p Quality Tier 1
-  score: 43000
-- name: 576p Quality Tier 2
-  score: 42000
-- name: 576p Quality Tier 3
-  score: 41000
-- name: 576p Quality Tier 4
-  score: 40000
-- name: 480p Quality Tier 1
-  score: 23000
-- name: 480p Quality Tier 2
-  score: 22000
-- name: 480p Quality Tier 3
-  score: 21000
-- name: 480p Quality Tier 4
-  score: 20000
+  score: 100000
 - name: DVD
-  score: 20000
+  score: 100000
 - name: DVD Remux
-  score: 20000
-- name: SD Quality Tier 1
-  score: 11000
-- name: SD Quality Tier 2
-  score: 10000
+  score: 100000
+# === Langue ===
 - name: FR - Multi
-  score: 5000
+  score: 50000
+# === Groupes FR ===
 - name: FR - UHD Bluray Tier 01
-  score: 1800
-- name: FR - HD Bluray Tier 01
   score: 1800
 - name: FR - UHD Bluray Tier 02
   score: 1750
+- name: FR - HD Bluray Tier 01
+  score: 1800
 - name: FR - HD Bluray Tier 02
   score: 1750
 - name: FR - WEB Tier 01
@@ -95,14 +58,22 @@ custom_formats:
   score: 1600
 - name: FR - Scene Groups
   score: 1500
+# === Streaming ===
 - name: AMZN
-  score: 2000
+  score: 3000
+- name: DSNP
+  score: 3000
 - name: ATVP
   score: 2000
-- name: Amazon Enhancement
+- name: HMAX
+  score: 2000
+- name: MAX
+  score: 2000
+- name: iT
   score: 1000
 - name: NF
   score: 1000
+# === Audio ===
 - name: FLAC
   score: 800
 - name: DTS-HD HRA
@@ -121,6 +92,20 @@ custom_formats:
   score: 300
 - name: AAC
   score: 200
+# === HDR ===
+- name: Dolby Vision
+  score: 3000
+- name: HDR10+
+  score: 2000
+- name: HDR10
+  score: 1000
+- name: HDR
+  score: 1000
+- name: HLG
+  score: 500
+- name: PQ
+  score: 500
+# === WEB-DL Tiers ===
 - name: WEB-DL Tier 1
   score: 100
 - name: WEB-DL Tier 2
@@ -131,55 +116,23 @@ custom_formats:
   score: 40
 - name: WEB-DL Tier 5
   score: 20
+# === Repacks ===
 - name: Repack3
   score: 8
 - name: Repack2
   score: 7
 - name: Repack1
   score: 6
-- name: BCORE
-  score: 0
-- name: CRAV
-  score: 0
-- name: CRIT
-  score: 0
-- name: DRPO
-  score: 0
-- name: HTSR
-  score: 0
-- name: HULU
-  score: 0
-- name: iP
-  score: 0
-- name: MUBI
-  score: 0
-- name: NOW
-  score: 0
-- name: PCOK
-  score: 0
-- name: PLAY
-  score: 0
-- name: PMTP
-  score: 0
-- name: ROKU
-  score: 0
-- name: SHO
-  score: 0
-- name: STAN
-  score: 0
+# === Blockers ===
 - name: ASL
   score: -999999
 - name: AV1
   score: -999999
-- name: Banned Groups (Efficient)
+- name: Banned Groups
   score: -999999
-- name: Banned WEBRip (Efficient)
+- name: Banned WEBRip
   score: -999999
-- name: Dolby Vision
-  score: 0
 - name: Dolby Vision (Without Fallback)
-  score: -999999
-- name: DS4K
   score: -999999
 - name: FR - LQ
   score: -999999
@@ -189,20 +142,6 @@ custom_formats:
   score: -999999
 - name: Full Disc
   score: -999999
-- name: h265 (Efficient)
-  score: -999999
-- name: HDR
-  score: 0
-- name: HDR10
-  score: 0
-- name: HDR10+
-  score: 0
-- name: HLG
-  score: 0
-- name: Lossless Audio
-  score: -999999
-- name: PQ
-  score: 0
 - name: Remux
   score: -999999
 - name: VP9
@@ -211,71 +150,15 @@ custom_formats:
   score: -999999
 - name: x264 (2160p)
   score: -999999
-- name: x265 (Efficient)
-  score: -999999
 - name: Xvid
   score: -999999
 custom_formats_radarr:
-- name: 2160p Balanced Tier 1
-  score: 382000
-- name: 2160p Balanced Tier 2
-  score: 381000
-- name: 2160p Balanced Tier 3
-  score: 380000
-- name: 1080p Efficient Movie Bluray Tier 1
-  score: 323000
-- name: QxR Bluray
-  score: 323000
-- name: TAoE Bluray
-  score: 323000
-- name: 1080p Efficient Movie Bluray Tier 2
-  score: 322000
-- name: Vialle Bluray
-  score: 322000
-- name: 1080p Efficient Movie Bluray Tier 3
-  score: 321000
-- name: 1080p Efficient Movie Bluray Tier 4
-  score: 320000
-- name: 1080p Efficient Movie WEB Tier 1
-  score: 303000
-- name: QxR WEB
-  score: 303000
-- name: TAoE WEB
-  score: 303000
-- name: Weasley WEB
-  score: 303000
-- name: 1080p Efficient Movie WEB Tier 2
-  score: 302000
-- name: 1080p Efficient Movie WEB Tier 3
-  score: 301000
-- name: 1080p Efficient Movie WEB Tier 4
-  score: 300000
-- name: 1080p Balanced Tier 1
-  score: 281000
-- name: 1080p Balanced Tier 2
-  score: 280000
-- name: 720p Balanced Tier 1
-  score: 60000
 - name: MA
-  score: 6000
-- name: DSNP
   score: 4000
-- name: iT
-  score: 4000
-- name: HMAX
-  score: 2000
-- name: MAX
-  score: 2000
 - name: Better Theatricals
   score: 1000
 - name: Special Edition
   score: 1000
-- name: Disney+ Enhancement
-  score: -1000
-- name: Movies Anywhere Enhancement
-  score: -2000
-- name: iTunes Enhancement
-  score: -3000
 - name: 3D
   score: -999999
 - name: B&W
@@ -291,33 +174,17 @@ custom_formats_radarr:
 - name: Upscale
   score: -999999
 custom_formats_sonarr:
-- name: 2160p Efficient TV Bluray Tier 1
-  score: 421000
-- name: QxR Blurays
-  score: 421000
-- name: TAoE Blurays
-  score: 421000
-- name: 2160p Efficient TV WEB Tier 1
-  score: 400000
-- name: QxR WEBs
-  score: 400000
-- name: TAoE WEBs
-  score: 400000
-- name: 2160p Balanced Tier 1
-  score: 384000
-- name: DSNP
-  score: 3000
-- name: HMAX
-  score: 3000
-- name: MAX
-  score: 3000
-- name: iT
-  score: 1000
-- name: HBO Max Enhancement
-  score: -1000
+- name: Season Pack
+  score: 10
+- name: Remux (Source)
+  score: -999999
+- name: TV Extras
+  score: -999999
+- name: Upscaled
+  score: -999999
 qualities:
 - id: -4
-  name: 2160p Efficient
+  name: 2160p Quality
   description: ''
   qualities:
   - id: 4
@@ -327,10 +194,8 @@ qualities:
   - id: 6
     name: WEBRip-2160p
 - id: -1
-  name: 1080p Efficient
-  description: Balanced Capable releases. Typically WEB-DL would be the overwhelming
-    majority of releases, but there are occasional streaming optimised encodes that
-    should be preferred.
+  name: 1080p Quality
+  description: Fallback to 1080p when 2160p cannot be found.
   qualities:
   - id: 10
     name: Bluray-1080p
@@ -362,5 +227,5 @@ qualities:
     name: DVD
 upgrade_until:
   id: -4
-  name: 2160p Efficient
+  name: 2160p Quality
 language: any
