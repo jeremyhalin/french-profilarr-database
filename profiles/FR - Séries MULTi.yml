@@ -1,7 +1,6 @@
 name: FR - Séries MULTi
 description: "Profil 1080p MULTi pour séries.\n\n- MULTi (VO+VF) fortement privilégié\n\
-  - Non-MULTi accepté en fallback, upgrade automatique vers MULTi\n- VF-only et VFQ\
-  \ bloqués\n- Remux et Lossless Audio bloqués pour contrôler la taille"
+  - Non-MULTi accepté en fallback, upgrade automatique vers MULTi\n- VFQ bloqué, VF-only accepté mais MULTi préféré\n- Remux et Lossless Audio bloqués pour contrôler la taille"
 tags:
 - 1080p
 - French
@@ -128,7 +127,7 @@ custom_formats:
 - name: FR - LQ
   score: -999999
 - name: FR - VF Only
-  score: -999999
+  score: 0
 - name: FR - VFQ
   score: -999999
 - name: Full Disc

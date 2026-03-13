@@ -1,7 +1,6 @@
 name: FR - Films 4K
 description: "Profil 2160p MULTi pour films.\n\n- MULTi (VO+VF) fortement privilégié\n\
-  - Non-MULTi accepté en fallback, upgrade automatique vers MULTi\n- VF-only et VFQ\
-  \ bloqués\n- x265 privilégié pour un bon ratio qualité/taille\n- x264 bloqué en\
+  - Non-MULTi accepté en fallback, upgrade automatique vers MULTi\n- VFQ bloqué, VF-only accepté mais MULTi préféré\n- x265 privilégié pour un bon ratio qualité/taille\n- x264 bloqué en\
   \ 4K\n- Remux bloqué, Lossless Audio accepté"
 tags:
 - 2160p
@@ -137,7 +136,7 @@ custom_formats:
 - name: FR - LQ
   score: -999999
 - name: FR - VF Only
-  score: -999999
+  score: 0
 - name: FR - VFQ
   score: -999999
 - name: Full Disc
