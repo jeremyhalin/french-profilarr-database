@@ -1,0 +1,7 @@
+name: FR - WEB Tier 03
+pattern: (?<=^|[\s.-])(BraD|dRuIdE|FTMVHD|LAZARUS|MYSTERiON|Scaph|WQM)\b
+description: French P2P WEB Tier 03 release groups
+tags:
+- Release Group
+- French
+tests: []

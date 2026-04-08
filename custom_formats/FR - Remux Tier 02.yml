@@ -1,0 +1,17 @@
+name: FR - Remux Tier 02
+description: French P2P Remux Tier 02 release groups
+tags:
+- Release Group Tier
+- French
+conditions:
+- name: Remux
+  negate: false
+  required: true
+  source: remux
+  type: source
+- name: FR Remux Tier 02 Groups
+  negate: false
+  pattern: FR - Remux Tier 02
+  required: false
+  type: release_group
+tests: []

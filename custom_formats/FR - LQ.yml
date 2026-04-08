@@ -1,0 +1,28 @@
+name: FR - LQ
+description: French low quality release groups
+tags:
+- Release Group
+- French
+- LQ
+conditions:
+- name: Ads/Watermarks
+  negate: false
+  pattern: FR - LQ Ads
+  required: false
+  type: release_group
+- name: Bad/False releases
+  negate: false
+  pattern: FR - LQ Bad
+  required: false
+  type: release_group
+- name: DeTAG/ReTAG
+  negate: false
+  pattern: FR - LQ DeTAG
+  required: false
+  type: release_group
+- name: Other reasons
+  negate: false
+  pattern: FR - LQ Other
+  required: false
+  type: release_group
+tests: []

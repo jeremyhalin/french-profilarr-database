@@ -1,0 +1,7 @@
+name: FR - Remux Tier 02
+pattern: (?<=^|[\s.-])(BDHD|KTM|MARBLECAKE|MUSTANG|Obi|PEPiTE|QUEBEC63|ROMKENT)\b
+description: French P2P Remux Tier 02 release groups
+tags:
+- Release Group
+- French
+tests: []

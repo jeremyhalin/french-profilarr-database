@@ -1,0 +1,7 @@
+name: FR - HD Bluray Tier 02
+pattern: (?<=^|[\s.-])(HDForever|MARBLECAKE|MYSTERiON|NoNE|ONLY|ONLYMOViE|TkHD|UTT)\b
+description: French P2P HD Bluray Tier 02 release groups
+tags:
+- Release Group
+- French
+tests: []

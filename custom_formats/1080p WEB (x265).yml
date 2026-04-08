@@ -1,0 +1,26 @@
+name: 1080p WEB (x265)
+description: Matches 1080p WEB releases encoded with x265/HEVC.
+tags:
+- Source
+conditions:
+- name: 1080p
+  negate: false
+  required: true
+  resolution: 1080p
+  type: resolution
+- name: WEB-DL
+  negate: false
+  required: false
+  source: web_dl
+  type: source
+- name: WEBRip
+  negate: false
+  required: false
+  source: webrip
+  type: source
+- name: x265
+  negate: false
+  pattern: x265
+  required: true
+  type: release_title
+tests: []

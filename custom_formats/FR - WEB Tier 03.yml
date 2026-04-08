@@ -1,0 +1,22 @@
+name: FR - WEB Tier 03
+description: French P2P WEB Tier 03 release groups
+tags:
+- Release Group Tier
+- French
+conditions:
+- name: WEB-DL
+  negate: false
+  required: false
+  source: web_dl
+  type: source
+- name: WEBRip
+  negate: false
+  required: false
+  source: webrip
+  type: source
+- name: FR WEB Tier 03 Groups
+  negate: false
+  pattern: FR - WEB Tier 03
+  required: false
+  type: release_group
+tests: []

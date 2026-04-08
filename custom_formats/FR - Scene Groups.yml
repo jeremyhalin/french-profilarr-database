@@ -1,0 +1,12 @@
+name: FR - Scene Groups
+description: French Scene release groups (fallback quality)
+tags:
+- Release Group
+- French
+conditions:
+- name: FR Scene Groups
+  negate: false
+  pattern: FR - Scene Groups
+  required: false
+  type: release_group
+tests: []

@@ -1,0 +1,22 @@
+name: FR - WEB Tier 01
+description: French P2P WEB Tier 01 release groups (best quality)
+tags:
+- Release Group Tier
+- French
+conditions:
+- name: WEB-DL
+  negate: false
+  required: false
+  source: web_dl
+  type: source
+- name: WEBRip
+  negate: false
+  required: false
+  source: webrip
+  type: source
+- name: FR WEB Tier 01 Groups
+  negate: false
+  pattern: FR - WEB Tier 01
+  required: false
+  type: release_group
+tests: []

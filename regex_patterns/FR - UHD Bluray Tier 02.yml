@@ -1,0 +1,7 @@
+name: FR - UHD Bluray Tier 02
+pattern: (?<=^|[\s.-])(DUSTiN|FCK|FrIeNdS|QUALiTY)\b
+description: French P2P UHD Bluray Tier 02 release groups
+tags:
+- Release Group
+- French
+tests: []
