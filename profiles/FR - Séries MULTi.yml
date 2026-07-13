@@ -1,6 +1,6 @@
 name: FR - Séries MULTi
 description: "Profil 1080p MULTi pour séries.\n\n- MULTi (VO+VF) fortement privilégié\n\
-  - Non-MULTi accepté en fallback, upgrade automatique vers MULTi\n- VFQ bloqué, VF-only accepté mais MULTi préféré\n- Remux et Lossless Audio bloqués pour contrôler la taille"
+  - Non-MULTi accepté en fallback, upgrade automatique vers MULTi\n- VFQ bloqué, VF-only accepté mais MULTi préféré\n- x265/HEVC privilégié, x264 accepté en fallback\n- HDR banni (SDR uniquement)\n- Remux et Lossless Audio bloqués pour contrôler la taille"
 tags:
 - 1080p
 - French
@@ -35,6 +35,11 @@ custom_formats:
 # === Langue ===
 - name: FR - Multi
   score: 50000
+# === Codec ===
+- name: x265
+  score: 2000
+- name: h265
+  score: 2000
 # === Groupes FR ===
 - name: FR - HD Bluray Tier 01
   score: 1800
@@ -104,17 +109,17 @@ custom_formats:
 - name: DS4K
   score: 1000
 - name: Dolby Vision
-  score: 0
+  score: -999999
 - name: HDR
-  score: 0
+  score: -999999
 - name: HDR10
-  score: 0
+  score: -999999
 - name: HDR10+
-  score: 0
+  score: -999999
 - name: HLG
-  score: 0
+  score: -999999
 - name: PQ
-  score: 0
+  score: -999999
 # === Blockers ===
 - name: ASL
   score: -999999
